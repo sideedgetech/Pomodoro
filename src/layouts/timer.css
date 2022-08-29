@@ -1,0 +1,100 @@
+.grid {
+  font-family: Quicksand, sans-serif;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr 6fr;
+}
+
+.grid div {
+  padding: 1rem;
+}
+
+.grid div:first-child,
+.grid div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background: #25a65b;
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0.2rem;
+}
+
+.btn-start-time {
+  padding: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: bolder;
+  background: teal;
+  width: 100%;
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
+
+.minutes {
+  font-weight: 600;
+}
+
+.seconds {
+  font-weight: 400;
+}
+
+.btn-bottom {
+  font-weight: 600;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+.btn-start {
+  background: #27ae60;
+}
+
+.btn-stop {
+  background: #c0392b;
+}
+
+.btn-reset {
+  background: #ecf0f1;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.shortcuts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.shortcuts div {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.shortcuts div:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media all and (max-width: 350px) {
+  .btn-start-time {
+    font-size: 0.7rem;
+  }
+}
+
+@media all and (max-width: 520px) {
+  .btn-bottom {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+}
